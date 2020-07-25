@@ -83,13 +83,14 @@ h6 {
   /* justify-content: center; */
   text-align: center;
   align-content: center;
-  border: 2px dashed lightcoral;
+  /* border: 2px dashed lightcoral; */
   min-height: 10em;
 }
 
 .intro-wrapper {
   background-color: var(--secondary-color);
   border: 1px solid var(--border-color);
+  border-radius: 5px 5px 0 0;
 
   -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
@@ -105,17 +106,21 @@ h6 {
 
 .nav-wrapper {
   grid-area: nav-wrapper;
-  border: 1px dashed lightcoral;
+  border-bottom: 1px solid var(--border-color);
+  /* border: 1px dashed lightcoral; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .left-column {
   grid-area: left-column;
-  border: 1px dashed lightcoral;
+  /* border: 1px dashed lightcoral; */
 }
 
 .right-column {
   grid-area: right-column;
-  border: 1px dashed lightcoral;
+  /* border: 1px dashed lightcoral; */
 }
 
 @media screen and (max-width: 1200px) {
