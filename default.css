@@ -20,6 +20,8 @@ h5,
 h6,
 strong {
   color: var(--main-text);
+  font-family: "Russo One", sans-serif;
+  font-weight: 500;
 }
 
 p,
@@ -28,6 +30,35 @@ span,
 label,
 textarea {
   color: var(--secondary-text);
+  font-family: "Roboto Mono", monospace;
+}
+
+a {
+  text-decoration: none;
+  color: #17a2b8;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-size: 56px;
+}
+h2 {
+  font-size: 36px;
+}
+h3 {
+  font-size: 28px;
+}
+h4 {
+  font-size: 24px;
+}
+h5 {
+  font-size: 20px;
+}
+h6 {
+  font-size: 16px;
 }
 
 .s1 {
@@ -40,4 +71,15 @@ textarea {
   background-color: var(--secondary-color);
   border-bottom: 1px solid var(--border-color);
   overflow: auto;
+}
+
+.main-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .main-container {
+    width: 95%;
+  }
 }
