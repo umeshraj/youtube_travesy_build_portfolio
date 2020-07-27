@@ -6,6 +6,9 @@
   --secondary-text: #4b5156;
 
   --theme-dot-border: #24292e;
+
+  --preview-bg: rgb(251, 249, 243, 0.8);
+  --preview-shadow: #f0ead6;
 }
 
 html,
@@ -221,6 +224,53 @@ h6 {
 .right-column {
   grid-area: right-column;
   /* border: 1px dashed lightcoral; */
+  display: grid;
+  align-content: center;
+}
+
+#preview-shadow {
+  background-color: var(--preview-shadow);
+  width: 300px;
+  height: 180px;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+
+#preview {
+  width: 300px;
+  border: 1.5px solid #17a2b8;
+  background-color: var(--preview-bg);
+  padding: 15px;
+  position: relative;
+}
+
+.corner {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border: 1.5px solid #17a2b8;
+  background-color: #fff;
+  position: absolute;
+}
+
+#corner-tl {
+  top: -5px;
+  left: -5px;
+}
+
+#corner-tr {
+  top: -5px;
+  right: -5px;
+}
+
+#corner-bl {
+  bottom: -5px;
+  left: -5px;
+}
+
+#corner-br {
+  bottom: -5px;
+  right: -5px;
 }
 
 @media screen and (max-width: 1200px) {
