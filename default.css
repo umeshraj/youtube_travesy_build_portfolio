@@ -127,6 +127,10 @@ h6 {
   padding: 10px;
 }
 
+#navigation a {
+  color: var(--main-text);
+}
+
 #navigation li {
   display: inline-block;
   margin-right: 5px;
